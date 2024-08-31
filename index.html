@@ -33,7 +33,14 @@
     <button type="button" class="btn" id="btn" onclick="change()">roll</button>
 
    </div>
-    
+    <script>
+        function change() {
+            const img = document.getElementById("img");
+            const num = Math.floor(Math.random() * (7 - 1)) + 1;
+             num==num? img.src = `${num}.png`: img.src = `${num}.png`
+        }
+               
+    </script>
 </body>
 
 </html>
